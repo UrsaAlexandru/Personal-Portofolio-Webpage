@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="flexbox-container">
+    <!-------------------------------NAVBAR---------------------------------->
     <nav id="navbar">
         <div class="logo">
             <h4>
@@ -21,7 +22,7 @@
         <ul class="nav-links">
             <li class="1"><a href="#">Home</a></li>
             <li class="2"><a href="#about-section">About</a></li>
-            <li class="3"><a href="#">Skills</a></li>
+            <li class="3"><a href="#skills-section">Skills</a></li>
             <li class="4"><a href="#">Projects</a></li>        
         </ul>
         <div class="burger">
@@ -30,7 +31,7 @@
             <div class="line3"></div>
         </div>
     </nav>
-
+    <!----------------------------WELCOME SECTION------------------------------>
     <div class = "welcome-section">
         <h1 class = "welcome-header center">Hi, I am Ursa Alexandru. Nice to meet you.</h1>
         <div class = "about-me-p" ><p id="first">
@@ -40,11 +41,11 @@
              </p>
         </div>
         <div class ="imagine-block">
-            <img src="img/AvatarMaker.png" class= "avatar" alt="avatar">
+            <img src="img/avatar2.png" class= "avatar" alt="avatar">
         </div>
 
     </div>
-
+    <!----------------------------ABOUT SECTION------------------------------>
     <div id = "about-section">
         <h3 class="about-section-header center">Who am i?</h3>
         <div class = "about-me-p"><p id = "second">
@@ -53,7 +54,34 @@
             Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.*
         </p></div>
     </div>
-
+    <!----------------------------SKILLS SECTION------------------------------>
+    <div id="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-boxes">
+        <div class="tv skills-left">
+            <ion-icon name="phone-portrait-sharp"></ion-icon>
+            <h4>Responsive Web Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+                Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>
+        <div class="tv skills-center">
+            <ion-icon name="logo-angular"></ion-icon>
+            <h4>Javascript / Angular JS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+                Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>
+        <div class="tv skills-right">
+            <ion-icon name="earth"></ion-icon>
+            <h4>Some skill</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+                Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>
+        </div>
+    </div>
+    <!----------------------------FOOTER SECTION------------------------------>
     <footer>
         <div class="footer-container">
             <div class="quote-container">
@@ -71,5 +99,7 @@
     </footer>
     </div>
     <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

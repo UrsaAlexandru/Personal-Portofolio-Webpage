@@ -43,7 +43,7 @@ nav {
 #navbar {
     position:fixed;
     top:0px;
-    width:100%;
+    width: 100%;
     z-index:9999;
 }
 
@@ -98,7 +98,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100vw;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -115,6 +115,7 @@ nav {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100vw;
     }
 
     .welcome-header{
@@ -170,7 +171,7 @@ nav {
     position: relative;
     width: 100%;
     min-height: 100%; 
-    background-color: #b19cd9;
+    background-color: rgb(112, 6, 187);
 }
 
 .welcome-header {
@@ -205,12 +206,12 @@ nav {
 
 #about-section {
     background-image: url("img/background2.jpg");
-    width: 1519px;
-    height: 1073px;
+    height: 900px;
+    background-size: cover;
 }
 
 .about-section-header{
-    padding-top: 7vw;
+    padding-top: 3vw;
     font-weight: 800;
     font-size: 3vw;
     color: rgb(57, 2, 97);
@@ -220,13 +221,77 @@ nav {
 .about-me-p #second {
     padding-left: 25vh;
     padding-right: 25vh;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
     text-align: center;
     color: rgb(57, 2, 97);
     font-size: 2vw;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
+
+/* Skills section */
+
+#skills-section {
+    background-color: rgb(112, 6, 187);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-boxes{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 4vh;
+}
+
+#skills-section h2{
+    text-transform: uppercase;
+    padding-bottom: 10vh;
+    font-size: 2vw;
+    font-weight: bold;
+
+}
+
+#skills-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#skills-section h4{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+ion-icon {
+    color:azure;
+    font-size: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 4vh;
+}
+.skills-left, .skills-center, .skills-right {
+    width: 27%;
+    display: inline-block;
+    float: left;
+    padding-top:10vh;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 11vw;
+}
+
+.tv {
+    background: rgba(134, 36, 204, 0.623);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+  }
+.tv:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 20px 20px rgba(0,0,0,.25);
+  }
 
 
 /* Footer section*/
@@ -279,3 +344,23 @@ footer {
     color: white;
 }
 
+/*Scroll bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(163, 41, 250); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(96, 62, 121); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(42, 2, 71); 
+  }
