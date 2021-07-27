@@ -1,0 +1,64 @@
+@import "./theme.css";
+
+#skills-section {
+    background-color: var(--main-bg-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-boxes{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 4vh;
+}
+
+#skills-section h2{
+    text-transform: uppercase;
+    padding-bottom: 10vh;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+
+}
+
+#skills-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#skills-section h4{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+ion-icon {
+    color:azure;
+    font-size: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 4vh;
+}
+.skills-left, .skills-center, .skills-right {
+    width: 27%;
+    display: inline-block;
+    float: left;
+    padding-top:10vh;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 11vw;
+}
+
+.tv {
+    background: rgba(148, 31, 231, 0.623);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+  }
+.tv:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 20px 20px rgba(0,0,0,.25);
+  }

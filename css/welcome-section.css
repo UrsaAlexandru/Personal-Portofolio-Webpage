@@ -1,0 +1,61 @@
+@import "./theme.css";
+
+.welcome-section {
+    position: relative;
+    width: 100%;
+    min-height: 100%; 
+    background-color: var(--main-bg-color);
+}
+
+.welcome-header {
+    padding-top: 7vw;
+    font-weight: 800;
+    font-size: 3vw;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me-p #first{
+    padding-left: 25vh;
+    padding-right: 25vh;
+    margin-bottom: 23px;
+    text-align: center;
+    color: azure;
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.avatar {
+    border-radius: 40%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11vw;
+}
+
+@media screen and (max-width:768px){
+    .welcome-section {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .welcome-header{
+        margin-top: 10vh;
+    }
+
+    .about-me-p #first{
+        width:30%;
+        margin-left: 0px;
+        padding-left: -10vh;
+
+    }
+
+    .avatar {
+        height: 20vh;
+        width: 20vh;
+    }
+}
