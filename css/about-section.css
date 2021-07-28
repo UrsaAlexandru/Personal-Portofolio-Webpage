@@ -9,7 +9,7 @@
 .about-section-header{
     padding-top: 3vw;
     font-weight: 800;
-    font-size: 3vw;
+    font-size: 3rem;
     color: rgb(57, 2, 97);
     font-family: 'Poppins', sans-serif;
     text-shadow: 3px 3px 5px azure;
@@ -21,8 +21,26 @@
     margin-bottom: 30px;
     text-align: center;
     color: rgb(57, 2, 97);
-    font-size: 2vw;
+    font-size: 1.9rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 1000;
-    text-shadow: 3px 3px 5px azure;
+    font-weight: bold;
+    text-shadow: white 5px 5px 10px;
+}
+
+@media screen and (max-width:480px){
+    #about-section{
+        height: 500px;
+    }
+    
+    
+    .about-section-header {
+        font-size: 2rem;
+    }
+
+    .about-me-p #second {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size:1.6rem;
+    }
+
 }

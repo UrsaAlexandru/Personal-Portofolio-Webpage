@@ -25,9 +25,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
+
 .flexbox-container {
     display:flex;
     flex-direction: column;
+    width:100%;
 }
 
 .center {
