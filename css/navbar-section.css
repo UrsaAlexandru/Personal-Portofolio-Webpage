@@ -25,10 +25,22 @@ nav {
 
 .nav-links li {
     list-style: none;
+    
 }
 
-.nav-links a {
+.nav-links li a {
     color: azure;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-links li a:hover{
+    background: azure;
+    color:black;
     letter-spacing: 3px;
     text-decoration: none;
     font-weight: bold;
